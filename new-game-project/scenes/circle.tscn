@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://0bsrrctpsmor"]
+
+[ext_resource type="Shader" uid="uid://dsifcfhu7rsyp" path="res://assets/circle_shader_material.gdshader" id="1_wcjn7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3e3c1"]
+shader = ExtResource("1_wcjn7")
+shader_parameter/radius = 4.994
+shader_parameter/circle_color = Color(1, 0.419608, 1, 1)
+shader_parameter/border_thickness = 0.0
+shader_parameter/border_color = Color(0.592157, 0, 0, 0)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_3e3c1")
+offset_right = 40.0
+offset_bottom = 40.0
